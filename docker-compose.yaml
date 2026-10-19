@@ -4,8 +4,8 @@ services:
     build:
       context: .
       args:
-        # Or amd64
-        - TARGETARCH=arm64
+        # Or arm64
+        - TARGETARCH=amd64
     environment:
       - TZ=America/Chicago
     volumes:
