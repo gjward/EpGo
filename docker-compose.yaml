@@ -8,8 +8,8 @@ services:
     environment:
       - TZ=America/Chicago # Set to your local timezone
     volumes:
-      - ./config.yaml:/app/config.yaml
+      - ./config.yaml:/app/epgo/config.yaml
     command:
       - -config
-      - /app/config.yaml
+      - /app/epgo/config.yaml
     restart: no
