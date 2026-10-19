@@ -8,7 +8,7 @@ services:
     environment:
       - TZ=America/Chicago # Set to your local timezone
     volumes:
-      - ./app/config.yaml:/app/epgo/config.yaml
+      - ./config.yaml:/app/config.yaml
     command:
       - -config
       - /app/epgo/config.yaml
