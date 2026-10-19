@@ -9,7 +9,6 @@ services:
     environment:
       - TZ=America/Chicago
     volumes:
-      # Assumes config.yaml is in the same directory as this docker-compose.yaml
-      - ./config.yaml:/Docker/epgo/config.yaml
-    command: -config /Docker/epgo/config.yaml
+      - /volume1/Docker/epgo/config.yaml:/app/config.yaml
+    command: -config /app/config.yaml
     restart: no
