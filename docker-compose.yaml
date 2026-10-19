@@ -8,6 +8,6 @@ services:
     environment:
       - TZ=America/Chicago
     volumes:
-      - /volume1/Docker/epgo/app:/app
+      - /volume1/Docker/epgo/app:/home/epgo/app
     command: -config /app/config.yaml
     restart: no
