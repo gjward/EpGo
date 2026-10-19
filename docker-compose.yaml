@@ -4,11 +4,12 @@ services:
     build:
       context: .
       args:
-        # Or arm64
-        - TARGETARCH=amd64
+        - TARGETARCH=amd64 # Change to arm64 if running on ARM architecture
     environment:
-      - TZ=America/Chicago
+      - TZ=America/Chicago # Set to your local timezone
     volumes:
-      - /volume1/Docker/epgo/app:/home/epgo/app
-    command: -config /app/config.yaml
+      - ./config.yaml:/app/config.yaml
+    command:
+      - -config
+      - /app/config.yaml
     restart: no
