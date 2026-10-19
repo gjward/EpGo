@@ -9,6 +9,6 @@ services:
     environment:
       - TZ=America/Chicago
     volumes:
-      - /volume1/Docker/epgo/config.yaml:/app/config.yaml
-    command: -config /app/config.yaml
+      - /Docker/epgo/config.yaml:config.yaml
+    command: -config config.yaml
     restart: no
