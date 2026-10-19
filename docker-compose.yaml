@@ -1,8 +1,7 @@
 services:
   epgo:
     container_name: epgo
-    build:
-      context: .
+    build .
       args:
         # Or arm64
         - TARGETARCH=amd64
