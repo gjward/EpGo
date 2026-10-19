@@ -11,5 +11,5 @@ services:
       - ./config.yaml:/app/config.yaml
     command:
       - -config
-      - /app/epgo/config.yaml
+      - /app/config.yaml
     restart: no
