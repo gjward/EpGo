@@ -12,4 +12,4 @@ services:
       # Assumes config.yaml is in the same directory as this docker-compose.yaml
       - ./config.yaml:/app/config.yaml
     command: -config /app/config.yaml
-    restart: never
+    restart: no
